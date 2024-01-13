@@ -14,142 +14,178 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Select Your Figther</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>ESCOLHA SEU LUTADOR</h1>
         <h2>PERSONAGENS FAVORITOS DOS FÃS, NOVOS E ANTIGOS</h2>
     </header>
-    <section class="rooster">
+    <section class="rooster" id="rooster">
         <div class="slide">
-            <div class="char str d-none d-lg-block" onclick="detalhes()"></div>
-            <div class="char" onclick="detalhes()">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/liu-kang/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Deus do Fogo</p>
-                    <h3>LIU KANG</h3>
-                </div>
+            <div class="char str d-none d-lg-block"></div>
+            <div class="char">
+                <img class="kom" id="liu-kang" src="https://cdn-mk1.mortalkombat.com/roster/liu-kang/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('liu-kang')">
+                        <p>Deus do Fogo</p>
+                        <h3>LIU KANG</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img id="sub-zero" onclick="pegarSrc(this)" class="kom" src="https://cdn-mk1.mortalkombat.com/roster/sub-zero/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Grão-mestre dos Lin Kuei</p>
-                    <h3>SUB-ZERO</h3>
-                </div>
+                <img id="sub-zero" class="kom" src="https://cdn-mk1.mortalkombat.com/roster/sub-zero/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('sub-zero');">
+                        <p>Grão-mestre dos Lin Kuei</p>
+                        <h3>SUB-ZERO</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/scorpion/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Venerável Guerreiro Lin Kuei</p>
-                    <h3>SCORPION</h3>
-                </div>
+                <img class="kom" id="scorpion" src="https://cdn-mk1.mortalkombat.com/roster/scorpion/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('scorpion')">
+                        <p>Venerável Guerreiro Lin Kuei</p>
+                        <h3>SCORPION</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/kitana/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Princesa da Exoterra</p>
-                    <h3>KITANA</h3>
-                </div>
+                <img class="kom" id="kitana" src="https://cdn-mk1.mortalkombat.com/roster/kitana/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('kitana')">
+                        <p>Princesa da Exoterra</p>
+                        <h3>KITANA</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/johnny-cage/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Herói de Ação de Século 21</p>
-                    <h3>JOHNNY CAGE</h3>
-                </div>
+                <img class="kom" id="johnny" src="https://cdn-mk1.mortalkombat.com/roster/johnny-cage/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('johnny')">
+                        <p>Herói de Ação de Século 21</p>
+                        <h3>JOHNNY CAGE</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/kenshi-takahashi/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Salvador do nome de sua Familia</p>
-                    <h3>KENSHI TAKAHASHI</h3>
-                </div>
+                <img class="kom" id="kenshi" src="https://cdn-mk1.mortalkombat.com/roster/kenshi-takahashi/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('kenshi')">
+                        <p>Salvador do nome de sua Familia</p>
+                        <h3>KENSHI TAKAHASHI</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/kung-lao/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>jovem Guerreiro com Sonhos de Glória</p>
-                    <h3>KUNG LAO</h3>
-                </div>
+                <img class="kom" id="kung-lao" src="https://cdn-mk1.mortalkombat.com/roster/kung-lao/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('kung-lao')">
+                        <p>jovem Guerreiro com Sonhos de Glória</p>
+                        <h3>KUNG LAO</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/mileena/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>herdeira do Trono da Exoterra</p>
-                    <h3>MILEENA</h3>
-                </div>
+                <img class="kom" id="mileena" src="https://cdn-mk1.mortalkombat.com/roster/mileena/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('mileena')">
+                        <p>herdeira do Trono da Exoterra</p>
+                        <h3>MILEENA</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/raiden/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Campeão do Plano Terreno</p>
-                    <h3>RAIDEN</h3>
-                </div>
+                <img class="kom" id="raiden" src="https://cdn-mk1.mortalkombat.com/roster/raiden/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('raiden')">
+                        <p>Campeão do Plano Terreno</p>
+                        <h3>RAIDEN</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/rain/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Grande Mago da Exoterra</p>
-                    <h3>RAIN</h3>
-                </div>
+                <img class="kom" id="rain" src="https://cdn-mk1.mortalkombat.com/roster/rain/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('rain')">
+                        <p>Grande Mago da Exoterra</p>
+                        <h3>RAIN</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/smoke/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Mestre da Furtividade</p>
-                    <h3>SMOKE</h3>
-                </div>
+                <img class="kom" id="smoke" src="https://cdn-mk1.mortalkombat.com/roster/smoke/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('smoke')">
+                        <p>Mestre da Furtividade</p>
+                        <h3>SMOKE</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/li-mei/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Primeira Condestavél de Sun Do</p>
-                    <h3>LI MEI</h3>
-                </div>
+                <img class="kom" id="li-mei" src="https://cdn-mk1.mortalkombat.com/roster/li-mei/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('li-mei')">
+                        <p>Primeira Condestavél de Sun Do</p>
+                        <h3>LI MEI</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/baraka/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Defensor dos Tarkatâneos</p>
-                    <h3>BARAKA</h3>
-                </div>
+                <img class="kom" id="baraka" src="https://cdn-mk1.mortalkombat.com/roster/baraka/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('baraka')">
+                        <p>Defensor dos Tarkatâneos</p>
+                        <h3>BARAKA</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/tanya/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Guardiã da Família Real da Exoterra</p>
-                    <h3>TANYA</h3>
-                </div>
+                <img class="kom" id="tanya" src="https://cdn-mk1.mortalkombat.com/roster/tanya/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('tanya')">
+                        <p>Guardiã da Família Real da Exoterra</p>
+                        <h3>TANYA</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/geras/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Sentinela da Ampulheta</p>
-                    <h3>GERAS</h3>
-                </div>
+                <img class="kom" id="geras" src="https://cdn-mk1.mortalkombat.com/roster/geras/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('geras')">
+                        <p>Sentinela da Ampulheta</p>
+                        <h3>GERAS</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/reptile/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Escravo Zaterrano</p>
-                    <h3>REPTILE</h3>
-                </div>
+                <img class="kom" id="reptile" src="https://cdn-mk1.mortalkombat.com/roster/reptile/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('reptile')">
+                        <p>Escravo Zaterrano</p>
+                        <h3>REPTILE</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/havik/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Anarquista Rebelde</p>
-                    <h3>HAVIK</h3>
-                </div>
+                <img class="kom" id="havik" src="https://cdn-mk1.mortalkombat.com/roster/havik/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('havik')">
+                        <p>Anarquista Rebelde</p>
+                        <h3>HAVIK</h3>
+                    </div>
+                </a>
             </div>
             <div class="char">
-                <img class="kom" src="https://cdn-mk1.mortalkombat.com/roster/ashrah/thumb-w.webp" alt="">
-                <div class="title">
-                    <p>Demônio Sobrenatural Arrependida</p>
-                    <h3>ASHRAH</h3>
-                </div>
+                <img class="kom" id="ashra" src="https://cdn-mk1.mortalkombat.com/roster/ashrah/hero.webp" alt="">
+                <a href="#descricao">
+                    <div class="title" onclick="detalhes(); pegarSrc('ashra')">
+                        <p>Demônio Sobrenatural Arrependida</p>
+                        <h3>ASHRAH</h3>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -171,13 +207,37 @@
         </div>
     </section>
     <section>
-        <div class="desc d-none" id="descricao">
+        <div class="desc" id="descricao">
             <div class="container-fluid details">
-                <img onclick="more()" class="liuKangD" src="https://cdn-mk1.mortalkombat.com/roster/liu-kang/hero.webp" alt="">
+                <h1>Liu Kang</h1>
+                
                 <img id="foto" class="liuKangD" src="" alt="">
+                <div class="buttonArea">
+                    <a href="#header"  onclick="voltar()">
+                        <button class="btn buttonBack"><div class="buttonText">VOLTAR</div></button>
+                    </a>
+                </div>
             </div>
+            
         </div>
+        
     </section>
+    <!-- <section>
+        <div class="test" id="descricao">
+            <div class="container-fluid details">
+                <h1>Liu Kang</h1>
+                
+                <img id="foto" class="liuKangD" src="" alt="">
+                <div class="tt">
+                    <a href="#header"  onclick="voltar()">
+                        <button class="btn btn-info butao"><div class="text">VOLTAR</div></button>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <h1>divisão</h1>
+    </section> -->
     <script src="js/mover.js"></script>
 </body>
 

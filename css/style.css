@@ -49,7 +49,8 @@ body {
     color: white;
     display: inline-block;
     transform: skew(-15deg);
-    position: relative; left: -7px;
+    position: relative;
+    left: -7px;
 }
 
 .chevronR {
@@ -60,10 +61,12 @@ body {
     color: white;
     display: inline-block;
     transform: skewX(-15deg);
-    position: relative; right: -7px;
+    position: relative;
+    right: -7px;
 }
 
-.chevronL:hover, .chevronR:hover {
+.chevronL:hover,
+.chevronR:hover {
     color: white;
     background-color: rgb(18, 18, 77);
     transition: 1s;
@@ -88,28 +91,21 @@ body {
     position: relative;
 }
 
-.char:hover {
-    cursor: pointer;
-}
-
 .str {
     width: 100px;
 }
 
 .kom {
     transform: skew(15deg);
-    height: 100%;
+    height: 150%;
     position: absolute;
-    left: -50px;
+    left: -120px;
 }
 
 .desc {
     height: 700px;
     width: 100%;
-}
-
-.desc:hover {
-    cursor: pointer;
+    display: none;
 }
 
 .title {
@@ -126,14 +122,15 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.title > h3, p {
+.title>h3,
+p {
     margin: 0px;
     font-size: 12px;
     transform: skew(30deg);
     font-weight: bold;
 }
 
-.title > h3 {
+.title>h3 {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -160,8 +157,50 @@ video {
     height: 500px;
     width: 100%;
     overflow: hidden;
+    position: absolute;
 }
 
 .liuKangD {
     height: 100%;
+}
+
+.buttonBack {
+    width: 100%;
+    border-radius: 7px 0px 0px 7px;
+    transform: skewX(-20deg);
+    position: relative; right: -10px;
+    background-color: rgba(18, 18, 77, 0.884);
+    color: white;
+    
+}
+
+.buttonBack:hover {
+    background-color: rgb(18, 18, 77);
+    color: white;
+}
+
+.test {
+    position: relative;
+}
+
+.buttonArea {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65%;
+    margin: 0px 0px 15px;
+    overflow: hidden;
+    
+}
+
+.butao {
+    width: 100%;
+    border-radius: 7px 0px 0px 7px;
+    transform: skewX(-20deg);
+    position: relative; right: -10px;
+}
+
+.buttonText {
+    transform: skewX(20deg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
